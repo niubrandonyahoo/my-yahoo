@@ -1,16 +1,2 @@
 version: 2.1
 
-jobs:
-  hello_world:
-    docker:
-      - image: cimg/base:stable # Using CircleCI's official base image
-    steps:
-      - checkout # Check out the code in the project directory
-      - run:
-          name: Say Hello
-          command: echo "Hello, World!"
-
-workflows:
-  hello_world_workflow:
-    jobs:
-      - hello_world
